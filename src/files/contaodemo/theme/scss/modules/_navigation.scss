@@ -15,11 +15,15 @@
 .nav-left a,
 .nav-left span.active,
 .nav-left span.trail,
+.nav-left strong.active,
+.nav-left strong.trail,
 .nav-left a.trail,
 .pagination a,
 .pagination span,
+.pagination strong,
 .mod_booknav a,
-.mod_booknav span {
+.mod_booknav span,
+.mod_booknav strong, {
     display:block;
     padding:8px;
     border:1px solid;
@@ -42,7 +46,7 @@
     /* W3C */
     background: linear-gradient(to bottom,  $navOffGradient1 0%,$navOffGradient2 3%,$navOffGradient3 100%);
     /* IE6-9 */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=#{data-quote($navOffGradient1)}, endColorstr=#{data-quote($navOffGradient2)},GradientType=0 );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$navOffGradient1', endColorstr='$navOffGradient2',GradientType=0 );
     font-size: 1.143em;
 }
 
@@ -62,9 +66,13 @@
 .nav-main > ul > li > .trail,
 .nav-left span.active,
 .nav-left span.trail,
+.nav-left strong.active,
+.nav-left strong.trail,
 .nav-left a.trail,
 .pagination span,
-.mod_booknav span {
+.pagination strong,
+.mod_booknav span,
+.mod_booknav strong {
     border-color: $navOnBorder;
     color: $navOnColor;
     /* Old browsers */
@@ -82,7 +90,7 @@
     /* W3C */
     background: linear-gradient(to bottom,  $navOnGradient1 0%,$navOnGradient2 3%,$navOnGradient3 96%,$navOnGradient4 100%);
     /* IE6-9 */;
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=#{data-quote($navOnGradient1)}, endColorstr=#{data-quote($navOnGradient2)},GradientType=0 );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$navOnGradient1', endColorstr='$navOnGradient2',GradientType=0 );
 
 }
 
@@ -145,7 +153,8 @@
 
         /* style the buttons */
         .level_2 a,
-        .level_2 span {
+        .level_2 span,
+        .level_2 strong {
             clear:both;
             display:block;
             padding:8px;
@@ -157,7 +166,8 @@
             border-bottom-color: $navSubItemBorderBottom;
         }
         .level_2 a.last,
-        .level_2 span.last {
+        .level_2 span.last,
+        .level_2 strong.last {
             border-bottom: none;
         }
     }
@@ -202,6 +212,8 @@
     a,
     span.active,
     span.trail,
+    strong.active,
+    strong.trail,
     a.trail {
         padding:10px;
         border-top: none;
@@ -211,13 +223,17 @@
 
     span.active,
     span.trail,
+    strong.active,
+    strong.trail,
     a.trail {
         border-top: 1px solid $navOnBorder;
     }
 
     .last a,
     .last span.active,
-    span.trail {
+    .last strong.active,
+    span.trail,
+    strong.trail {
         border-bottom: none;
     }
 }
@@ -241,7 +257,8 @@
     }
 
     a,
-    span {
+    span,
+    strong {
         display:inline-block;
         margin-right:2px;
         padding:5px 10px;
@@ -266,7 +283,8 @@
     }
 
     a,
-    span {
+    span,
+    strong {
         margin-right:2px;
         padding:5px;
     }

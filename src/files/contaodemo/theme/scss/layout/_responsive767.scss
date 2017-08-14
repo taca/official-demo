@@ -10,7 +10,7 @@
 	}
 	/*----- layout ------- */
 	body {
-		background: #fff;
+		background: $white;
 	}
 	#main .inside {
 		margin-right:0;
@@ -243,7 +243,8 @@
 		vertical-align:middle;
 		line-height:40px;
 	}
-	#left .mod_calendar {
+	#left .mod
+	_calendar {
 		display:none;
 	}
 }
